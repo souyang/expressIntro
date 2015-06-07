@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Shopping List</title>
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<div id="main-text">
+	<h1><%= title%></h1>
+	<h4><%= desc%></h4>
+</div>
+<br/>
+<ul id="menu">
+<% for (var i = 0; i < items.length; i++) {%>
+<li><span class="header">Category:</span><span class="detail"><%= items[i].category %></span> <span class="header">Description: </span><span class="detail"><%= items[i].desc %></span></li>
+<% } %>
+</ul>
+<br/>
+<form id="shoppingform" action="/add" method="post">
+<div id="category">
+<label>Category:</label>
+<input type="text" name="newItemCategory">
+</div>
+<div id="description">
+<label>Description:</label> 
+<input type="text" name = "newItemDescription">
+</div>
+<input type="submit" value="Add new item">
+</form>
+</div>
+</body>
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.js"></script>
+</html>
