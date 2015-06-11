@@ -2,10 +2,10 @@ var express = require('express');
 
 var router = express.Router();
 var todoItems = require('../models/todoItems');
-//define the routes
-		
+
+//define the routes		
 router.get('/', function(req, res){
-	//load data from DB here
+	//load data from modules here
 	res.render('index', {
 		title: 'Welcome to Shopping List Demo',
 		desc: 'It shows how to using Express.JS to develop a simple web app',
@@ -15,7 +15,7 @@ router.get('/', function(req, res){
 	
 	
 router.post('/add', function(req, res) {
-	var newItemCategory = req.body.newItemCategory // req.body needs middleware installed.
+	var newItemCategory = req.body.newItemCategory // use middleware module bodyparser
 	var newItemDescription = req.body.newItemDescription; // 
 	todoItems.push({
 		id: todoItems.length + 1,
