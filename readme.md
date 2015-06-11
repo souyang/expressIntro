@@ -19,12 +19,12 @@ in the command line, type "node app"
 Step 5: View the page via  localhost:l337
 
 you will see the similar screen 
- ![ScreenShot](screenshot/step1.jpg)
+ ![ScreenShot](screenshot/Step1.JPG)
 
 Step 6: Input category and description
 Sample input is specified 
-![ScreenShot](screenshot/step2.jpg)
+![ScreenShot](screenshot/Step2.JPG)
 
 Step 7: Click "Add new item"
 you will see the similar screen specified in
-![ScreenShot](screenshot/step3.jpg)
+![ScreenShot](screenshot/Step3.JPG)
