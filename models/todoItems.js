@@ -1,4 +1,4 @@
-//define the routes
+//define the modules and initialize data
 var express = require('express');
  var todoItems = [
 		{id: 1, category: 'Snack', desc: 'Snickers'},
