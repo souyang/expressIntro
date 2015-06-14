@@ -6,15 +6,19 @@
 }
 
 h1{
-	font-size:39px;
+	font-size:30px;
 	font-weight:bold;
-	margin:20px 200px 10px 200px;
+	margin:10px 100px 10px 100px;
 	line-height:1.2em;
+	resize: both;
+	overflow: auto;
 }
 
 h4{
-	font-size:22px;
+	font-size:18px;
 	margin:20px 200px 10px 200px;
+	resize: both;
+	overflow: auto;
 }
 
 
@@ -29,11 +33,15 @@ h4{
 display:inline-block;
 width:100px; 
 font-weight:bold;
+resize: both;
+overflow: auto;
 }
 
 .detail{
 display:inline-block;
-width:40%; 
+width:20%; 
+resize: both;
+overflow: auto;
 }
 
 #shoppingform label{

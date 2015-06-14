@@ -8,7 +8,7 @@ router.get('/', function(req, res){
 	//load data from modules here
 	res.render('index', {
 		title: 'Welcome to Shopping List Demo',
-		desc: 'It shows how to using Express.JS to develop a simple web app',
+		desc: 'Use Express.JS for the simple app',
 		items:	todoItems			
 	}); //index.xjs
 	}); //http method
